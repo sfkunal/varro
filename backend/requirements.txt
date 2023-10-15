@@ -1,0 +1,7 @@
+flask
+flask_cors
+openai
+requests
+textstat
+nltk
+flask_httpauth
