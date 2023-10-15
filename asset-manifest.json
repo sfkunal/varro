@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/varro/static/css/main.e6c13ad2.css",
+    "main.js": "/varro/static/js/main.4a5d8086.js",
+    "static/js/787.8b0c6dc1.chunk.js": "/varro/static/js/787.8b0c6dc1.chunk.js",
+    "static/media/varro.svg": "/varro/static/media/varro.31997d17e730d635c88d97633f627544.svg",
+    "index.html": "/varro/index.html",
+    "main.e6c13ad2.css.map": "/varro/static/css/main.e6c13ad2.css.map",
+    "main.4a5d8086.js.map": "/varro/static/js/main.4a5d8086.js.map",
+    "787.8b0c6dc1.chunk.js.map": "/varro/static/js/787.8b0c6dc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4a5d8086.js"
+  ]
+}
