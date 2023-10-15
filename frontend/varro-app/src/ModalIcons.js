@@ -12,13 +12,9 @@ function HelpContent() {
       <Typography variant="body1">
         1. Insert your prompt
         <br />
-        2. Review the summary
+        2. Review your summary
         <br />
-        3. Explore the sources
-        <br />
-        4. Analyze the input
-        <br />
-        5. Refine your search
+        3. Explore your sources
       </Typography>
     </>
   );
