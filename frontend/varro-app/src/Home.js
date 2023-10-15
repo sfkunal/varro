@@ -25,7 +25,7 @@ function Home() {
     event.preventDefault();
     setIsLoading(true);
 
-    const response = await fetch("http://127.0.0.1:5000/", {
+    const response = await fetch("https://flask-production-cbf0.up.railway.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
