@@ -1,7 +1,7 @@
 {
   "name": "varro-app",
   "version": "0.1.0",
-  "homepage": "https://sfkunal.github.io/varro",
+  "homepage": "https://varro.study/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
