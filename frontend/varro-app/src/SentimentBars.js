@@ -4,6 +4,10 @@ import { Box, Typography } from '@mui/material';
 
 const xLabels = ['—', 'O', '+'];
 
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
 const chartSetting = {
   xAxis: [
     {
@@ -14,6 +18,8 @@ const chartSetting = {
   width: 225,
   height: 225,
 };
+
+
 
 export default function SentimentBars({pos, neu, neg, first}) {
 	const d = [neg, neu, pos]
@@ -34,7 +40,7 @@ export default function SentimentBars({pos, neu, neg, first}) {
 				{...chartSetting}
 			/>
 			{Math.abs(pos - neg) > 0.2 ? (
-              <Typography variant="h7" fontStyle={"italic"}>
+              <Typography fontStyle={"italic"}>
                 The language sentiment of your input correlates to a potential for
                 bias on this given topic.
               </Typography>
@@ -53,7 +59,7 @@ export default function SentimentBars({pos, neu, neg, first}) {
 				alignItems: "center",
 			}}
 		>
-			<Typography variant="h6">Sentiment Analysis</Typography>
+			<Typography variant="h6" fontSize={isMobileDevice() ? 16 : 20}>Sentiment Analysis</Typography>
 			<BarChart
 				series={[
 					{data: d, id: 'dataId', color: '#B1B9FF'}
@@ -61,12 +67,12 @@ export default function SentimentBars({pos, neu, neg, first}) {
 				{...chartSetting}
 			/>
 			{Math.abs(pos - neg) > 0.2 ? (
-              <Typography variant="h7" fontStyle={"italic"}>
+              <Typography variant="h7" fontStyle={"italic"} fontSize={isMobileDevice() ? 12 : 15}>
                 Given the language sentiment of this article, there is a potential for bias
                 on this given topic.
               </Typography>
             ) : (
-              <Typography variant="h7" fontStyle={"italic"}>
+              <Typography variant="h7" fontStyle={"italic"} fontSize={isMobileDevice() ? 12 : 15}>
                 Given the language sentiment of this article, there is a low chance for
                 bias on this given topic.
               </Typography>

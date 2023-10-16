@@ -55,6 +55,7 @@ function ModalIcons() {
         display: 'flex',
         flexDirection: 'row',
         gap: '10px',
+        zIndex: 999
       }}
     >
       <HelpCenterIcon onClick={() => handleOpen(setOpenHelp)} fontSize='large' />

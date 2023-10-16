@@ -5,6 +5,7 @@ import ModalIcons from "./ModalIcons";
 import { ReactComponent as Logo } from "./varro.svg";
 
 function App() {
+
   return (
     <div
       className="App"
@@ -28,6 +29,7 @@ function App() {
           left: 10,
           top: 10,
           padding: "10px",
+          zIndex: 999
         }}
       />
       <Home />
